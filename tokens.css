@@ -1,0 +1,90 @@
+/* "von fett nach dünn" – Design-Tokens (Kate) · iOS-nah, freundlich */
+:root{
+  /* Flächen */
+  --bg:#F2F2F7; --surface:#FFFFFF; --surface-2:#F7F8FA; --separator:#E5E5EA;
+  /* Text */
+  --text:#1C1C1E; --text-2:#5C5C63; --text-3:#8E8E93; /* --text-3 nur ≥17px/Icons */
+  /* Primär Lila, Fortschritt Türkis */
+  --accent:#7C3AED;          /* Primär: Buttons, aktive Tabs, Links (Weiß darauf 5,7:1) */
+  --accent-strong:#6D28D9;   /* Text/Links auf Hell */
+  --accent-soft:#F1EBFE;     /* Chips, Auswahl */
+  --on-accent:#FFFFFF;
+  --teal:#0D9488;            /* Fortschritt, Ringe – Grafik 3,7:1 auf Weiß */
+  --teal-strong:#0F766E;     /* Türkis als Text auf Hell */
+  --teal-soft:#E6FAF7;
+  --gradient:linear-gradient(135deg,#7C3AED 0%,#0D9488 100%); /* Ring, Hero, Icon */
+  /* Status */
+  --warn:#B45309; --danger:#DC2626; --success:#0F766E;
+  /* Diagramme / Makros */
+  --chart-protein:#7C3AED; --chart-carbs:#D97706; --chart-fat:#EC4899;
+  --chart-weight:#0D9488; --chart-goal:#8E8E93; --chart-grid:#E5E5EA; --chart-water:#0891B2;
+  /* Mahlzeiten-Tönung (Icon-Kachel) */
+  --meal-breakfast:#FFF4E5; --meal-lunch:#E6FAF7; --meal-dinner:#F1EBFE; --meal-snack:#FDECF5;
+  /* Radien */
+  --r-xs:8px; --r-sm:12px; --r-md:16px; --r-lg:22px; --r-sheet:28px; --r-pill:999px;
+  /* Abstände (4er-Raster) */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px; --s-8:32px;
+  --screen-pad:16px; --card-pad:16px; --tabbar-h:83px; /* inkl. Home-Indicator */
+  /* Schrift */
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,sans-serif;
+  --font-num:-apple-system,"SF Pro Rounded","SF Pro Display",system-ui,sans-serif; /* tabular-nums */
+  --fs-largetitle:34px/41px; --fs-title:22px/28px; --fs-headline:17px/22px; /* 600 */
+  --fs-body:17px/22px; --fs-sub:15px/20px; --fs-foot:13px/18px; --fs-cap:12px/16px;
+  --fs-ring:44px/48px; /* Zahl im Kalorienring, 700, tabular-nums */
+  /* Schatten / Material */
+  --shadow-card:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.05);
+  --tabbar-bg:rgba(249,249,251,.82); --blur:saturate(180%) blur(20px);
+  /* Bewegung */
+  --ease-out:cubic-bezier(.22,1,.36,1); --spring:cubic-bezier(.34,1.56,.64,1);
+  --t-fast:150ms; --t-base:250ms; --t-ring:900ms; --t-sheet:420ms;
+  --tap-min:44px;
+}
+[data-theme="dark"]{
+  --bg:#000000; --surface:#1C1C1E; --surface-2:#2C2C2E; --separator:#38383A;
+  --text:#FFFFFF; --text-2:#C7C7CC; --text-3:#98989F;
+  --accent:#7C3AED; --accent-strong:#B79BFF; --accent-soft:#2A1B4A; --on-accent:#FFFFFF;
+  --teal:#2DD4BF; --teal-strong:#2DD4BF; --teal-soft:#0D2E2B;
+  --gradient:linear-gradient(135deg,#8B5CF6 0%,#2DD4BF 100%);
+  --warn:#FBBF24; --danger:#F87171; --success:#2DD4BF;
+  --chart-protein:#A78BFA; --chart-carbs:#FBBF24; --chart-fat:#F472B6;
+  --chart-weight:#2DD4BF; --chart-goal:#98989F; --chart-grid:#38383A; --chart-water:#22D3EE;
+  --meal-breakfast:#3A2A12; --meal-lunch:#0D2E2B; --meal-dinner:#2A1B4A; --meal-snack:#3A1630;
+  --shadow-card:none; --tabbar-bg:rgba(22,22,24,.78);
+}
+@media (prefers-reduced-motion:reduce){:root{--t-ring:0ms;--t-sheet:0ms;--t-base:0ms}}
+
+/* ===== Senioren-Modus: <html data-mode="senior"> – warm-monochrom, KEIN Lila/Türkis ===== */
+[data-mode="senior"]{
+  --fs-largetitle:40px/48px; --fs-title:28px/34px; --fs-headline:22px/28px;
+  --fs-body:21px/28px; --fs-sub:19px/26px; --fs-foot:17px/24px; --fs-cap:17px/22px; /* nichts unter 17px */
+  --fs-ring:56px/60px;
+  --tap-min:56px; --btn-h:60px; --screen-pad:20px; --card-pad:20px; --s-gap:16px;
+  --r-sm:14px; --r-md:20px; --r-lg:26px; --r-sheet:32px;   /* weich */
+  /* Hell: warmes Papier statt Weiß, warmes Schwarz statt #000 */
+  --bg:#F3EEE6; --surface:#FBF8F3; --surface-2:#ECE6DC;
+  --text:#1C1916; --text-2:#3E3832; --text-3:#57504A;
+  --separator:#8A8279; --card-border:2px solid #8A8279;
+  --accent:#1C1916; --accent-strong:#1C1916; --accent-soft:#E4DDD2; --on-accent:#FBF8F3;
+  --teal:#1C1916; --teal-strong:#1C1916; --teal-soft:#E4DDD2;
+  --gradient:none;
+  --warn:#1C1916; --danger:#8B1E1E; --success:#1C1916; /* Status zusätzlich immer mit Icon + Wort */
+  --chart-protein:#1C1916; --chart-carbs:#5A534C; --chart-fat:#857D74;  /* + Muster/Beschriftung, nie nur Farbe */
+  --chart-weight:#1C1916; --chart-goal:#5A534C; --chart-grid:#C9C1B6; --chart-water:#5A534C;
+  --meal-breakfast:#ECE6DC; --meal-lunch:#ECE6DC; --meal-dinner:#ECE6DC; --meal-snack:#ECE6DC;
+  --shadow-card:0 2px 6px rgba(40,30,20,.06);
+  --focus-ring:0 0 0 4px #1C1916;
+  --tabbar-bg:#FBF8F3; --blur:none;
+  --t-base:200ms; --t-ring:600ms; --t-sheet:300ms; --spring:var(--ease-out);
+}
+[data-theme="dark"][data-mode="senior"]{
+  --bg:#121110; --surface:#1E1C1A; --surface-2:#2A2724;
+  --text:#F6F1E9; --text-2:#DCD4C8; --text-3:#C2B9AC;
+  --separator:#857D74; --card-border:2px solid #857D74;
+  --accent:#F6F1E9; --accent-strong:#F6F1E9; --accent-soft:#34302C; --on-accent:#1C1916;
+  --teal:#F6F1E9; --teal-strong:#F6F1E9; --teal-soft:#34302C;
+  --warn:#F6F1E9; --danger:#F2A3A3; --success:#F6F1E9;
+  --chart-protein:#F6F1E9; --chart-carbs:#B8AFA3; --chart-fat:#8E867C;
+  --chart-weight:#F6F1E9; --chart-goal:#B8AFA3; --chart-grid:#4A4540; --chart-water:#B8AFA3;
+  --meal-breakfast:#2A2724; --meal-lunch:#2A2724; --meal-dinner:#2A2724; --meal-snack:#2A2724;
+  --shadow-card:none; --focus-ring:0 0 0 4px #F6F1E9; --tabbar-bg:#1E1C1A;
+}

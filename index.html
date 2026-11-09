@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F2F2F7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="von fett nach dünn">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>von fett nach dünn</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script>
+(function () {
+  var key = "von-fett-nach-duenn.v1";
+  var theme = "system";
+  var senior = false;
+  try {
+    var raw = localStorage.getItem(key);
+    if (raw) {
+      var data = JSON.parse(raw);
+      var s = data && data.settings;
+      if (s) {
+        if (s.theme === "light" || s.theme === "dark" || s.theme === "system") theme = s.theme;
+        senior = s.senior === true;
+      }
+    }
+  } catch (e) {}
+  var dark = theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  var root = document.documentElement;
+  root.setAttribute("data-theme", dark ? "dark" : "light");
+  root.setAttribute("data-theme-pref", theme);
+  if (senior) root.setAttribute("data-mode", "senior");
+  else root.removeAttribute("data-mode");
+  root.style.colorScheme = dark ? "dark" : "light";
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#view">Zum Inhalt</a>
+<div class="stage">
+  <div class="device">
+    <div class="app" id="app">
+      <div class="status-decor" aria-hidden="true"><span id="clock">9:41</span><span></span></div>
+      <div id="view" tabindex="-1"></div>
+      <div id="toast" data-testid="toast" hidden></div>
+      <nav class="tabbar" aria-label="Hauptnavigation">
+        <button type="button" data-go="dashboard" id="tab-dashboard"><span class="ico" data-icon="sun"></span><span>Heute</span></button>
+        <button type="button" data-go="mahlzeiten" id="tab-meals"><span class="ico" data-icon="meal"></span><span>Mahlzeiten</span></button>
+        <button type="button" data-go="fortschritt" id="tab-progress"><span class="ico" data-icon="chart"></span><span>Fortschritt</span></button>
+        <button type="button" data-go="profil" id="tab-profile"><span class="ico" data-icon="user"></span><span>Profil</span></button>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="live" class="sr-only" aria-live="polite"></div>
+<dialog id="reset-dialog" aria-labelledby="reset-title">
+  <h2 id="reset-title">Alle lokalen Einträge löschen?</h2>
+  <p>Mahlzeiten, Gewicht, Wasser, Bewegung, Ziele und gemerkte Lebensmittel auf diesem Gerät werden entfernt. Darstellung und größere Ansicht bleiben. Das lässt sich nicht rückgängig machen.</p>
+  <div class="dialog-actions">
+    <button type="button" class="btn secondary" id="reset-cancel" data-testid="reset-cancel">Abbrechen</button>
+    <button type="button" class="btn danger" id="reset-confirm" data-testid="reset-confirm">Endgültig löschen</button>
+  </div>
+</dialog>
+<noscript><p>Diese Seite braucht JavaScript im Browser. Es wird nichts an einen eigenen Server gesendet.</p></noscript>
+<script src="logic.js"></script>
+<script src="off.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
