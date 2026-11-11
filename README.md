@@ -1,6 +1,6 @@
 # von fett nach dünn
 
-Statische Fassung 2. Nicht veröffentlicht und nicht deployt.
+Statische Fassung 2. Seit 11.11.2026 live unter https://kingkirk.github.io/von-fett-nach-duenn/ (GitHub Pages, Branch main).
 
 Einträge bleiben im `localStorage` unter dem Schlüssel `von-fett-nach-duenn.v1`. Eine gespeicherte Fassung 1 wird beim Öffnen nach Fassung 2 übernommen. `settings.theme` und `settings.senior` bleiben dabei unverändert. Ohne gespeicherten Stand startet die App mit Großen Tasten und System.
 
