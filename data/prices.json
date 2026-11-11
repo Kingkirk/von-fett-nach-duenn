@@ -1,0 +1,709 @@
+{
+  "version": 1,
+  "currency": "EUR",
+  "asOf": "2026-11",
+  "note": "Richtpreise, geschätzt, Stand 11/2026. Tatsächliche Preise können abweichen.",
+  "categories": [
+    {
+      "id": "obst-gemuese",
+      "label": "Obst & Gemüse"
+    },
+    {
+      "id": "brot-backwaren",
+      "label": "Brot & Backwaren"
+    },
+    {
+      "id": "milchprodukte",
+      "label": "Milchprodukte & Eier"
+    },
+    {
+      "id": "fleisch-fisch",
+      "label": "Fleisch & Fisch"
+    },
+    {
+      "id": "tiefkuehl",
+      "label": "Tiefkühl"
+    },
+    {
+      "id": "vorrat",
+      "label": "Vorrat"
+    },
+    {
+      "id": "gewuerze",
+      "label": "Gewürze"
+    }
+  ],
+  "items": [
+    {
+      "ingredientId": "haferflocken",
+      "name": "Haferflocken, zart",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.89,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "milch",
+      "name": "Milch, 1,5 % Fett",
+      "category": "milchprodukte",
+      "packageSize": 1000,
+      "packageUnit": "ml",
+      "estimatedPriceEur": 1.09,
+      "isEstimate": true,
+      "baseUnit": "ml",
+      "packageBaseAmount": 1000,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "magerquark",
+      "name": "Magerquark",
+      "category": "milchprodukte",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.39,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "naturjoghurt",
+      "name": "Naturjoghurt, 1,5 % Fett",
+      "category": "milchprodukte",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "EL": 15
+      }
+    },
+    {
+      "ingredientId": "frischkaese-leicht",
+      "name": "Frischkäse, leicht",
+      "category": "milchprodukte",
+      "packageSize": 200,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 200,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "huettenkaese",
+      "name": "Hüttenkäse",
+      "category": "milchprodukte",
+      "packageSize": 200,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 200,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "mozzarella-leicht",
+      "name": "Mozzarella, leicht",
+      "category": "milchprodukte",
+      "packageSize": 125,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 125,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "feta",
+      "name": "Feta (Schafskäse)",
+      "category": "milchprodukte",
+      "packageSize": 200,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 200,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "eier",
+      "name": "Eier",
+      "category": "milchprodukte",
+      "packageSize": 10,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 2.99,
+      "isEstimate": true,
+      "baseUnit": "Stück",
+      "packageBaseAmount": 10,
+      "unitToBase": {
+        "Stück": 1
+      }
+    },
+    {
+      "ingredientId": "apfel",
+      "name": "Äpfel",
+      "category": "obst-gemuese",
+      "packageSize": 1000,
+      "packageUnit": "g",
+      "estimatedPriceEur": 2.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "Stück": 150
+      }
+    },
+    {
+      "ingredientId": "banane",
+      "name": "Bananen",
+      "category": "obst-gemuese",
+      "packageSize": 1000,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.69,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "Stück": 120
+      }
+    },
+    {
+      "ingredientId": "zitrone",
+      "name": "Zitronen",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 0.49,
+      "isEstimate": true,
+      "baseUnit": "Stück",
+      "packageBaseAmount": 1,
+      "unitToBase": {
+        "Stück": 1
+      }
+    },
+    {
+      "ingredientId": "tomate",
+      "name": "Tomaten",
+      "category": "obst-gemuese",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "Stück": 100
+      }
+    },
+    {
+      "ingredientId": "gurke",
+      "name": "Salatgurke",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 0.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 400,
+      "unitToBase": {
+        "Stück": 400
+      }
+    },
+    {
+      "ingredientId": "paprika",
+      "name": "Paprika, rot",
+      "category": "obst-gemuese",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 2.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "Stück": 150
+      }
+    },
+    {
+      "ingredientId": "zwiebel",
+      "name": "Zwiebeln",
+      "category": "obst-gemuese",
+      "packageSize": 1000,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "Stück": 80
+      }
+    },
+    {
+      "ingredientId": "knoblauch",
+      "name": "Knoblauch",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 0.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 40,
+      "unitToBase": {
+        "Zehe": 4
+      }
+    },
+    {
+      "ingredientId": "moehren",
+      "name": "Möhren",
+      "category": "obst-gemuese",
+      "packageSize": 1000,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.19,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "Stück": 80
+      }
+    },
+    {
+      "ingredientId": "kartoffeln",
+      "name": "Kartoffeln, festkochend",
+      "category": "obst-gemuese",
+      "packageSize": 1500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "kuerbis",
+      "name": "Hokkaido-Kürbis",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 1.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "Stück": 1000
+      }
+    },
+    {
+      "ingredientId": "zucchini",
+      "name": "Zucchini",
+      "category": "obst-gemuese",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "brokkoli",
+      "name": "Brokkoli",
+      "category": "obst-gemuese",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "lauch",
+      "name": "Lauch (Porree)",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Stück",
+      "estimatedPriceEur": 0.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 250,
+      "unitToBase": {
+        "Stück": 250
+      }
+    },
+    {
+      "ingredientId": "champignons",
+      "name": "Champignons, braun",
+      "category": "obst-gemuese",
+      "packageSize": 250,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 250,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "radieschen",
+      "name": "Radieschen",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Bund",
+      "estimatedPriceEur": 0.89,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 200,
+      "unitToBase": {
+        "Bund": 200
+      }
+    },
+    {
+      "ingredientId": "petersilie",
+      "name": "Petersilie, glatt",
+      "category": "obst-gemuese",
+      "packageSize": 1,
+      "packageUnit": "Bund",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 30,
+      "unitToBase": {
+        "EL": 3
+      }
+    },
+    {
+      "ingredientId": "vollkornbrot",
+      "name": "Vollkornbrot, geschnitten",
+      "category": "brot-backwaren",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "Scheibe": 50
+      }
+    },
+    {
+      "ingredientId": "knaeckebrot",
+      "name": "Vollkorn-Knäckebrot",
+      "category": "brot-backwaren",
+      "packageSize": 250,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 250,
+      "unitToBase": {
+        "Scheibe": 10
+      }
+    },
+    {
+      "ingredientId": "haehnchenbrust",
+      "name": "Hähnchenbrustfilet",
+      "category": "fleisch-fisch",
+      "packageSize": 400,
+      "packageUnit": "g",
+      "estimatedPriceEur": 4.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 400,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "putenbrust-aufschnitt",
+      "name": "Putenbrust, Aufschnitt",
+      "category": "fleisch-fisch",
+      "packageSize": 100,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 100,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "beeren-tk",
+      "name": "Beerenmischung, tiefgekühlt",
+      "category": "tiefkuehl",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 2.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "seelachs-tk",
+      "name": "Seelachsfilet, tiefgekühlt",
+      "category": "tiefkuehl",
+      "packageSize": 400,
+      "packageUnit": "g",
+      "estimatedPriceEur": 3.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 400,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "erbsen-tk",
+      "name": "Erbsen, tiefgekühlt",
+      "category": "tiefkuehl",
+      "packageSize": 450,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 450,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "spinat-tk",
+      "name": "Blattspinat, tiefgekühlt",
+      "category": "tiefkuehl",
+      "packageSize": 450,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 450,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "kraeuter-tk",
+      "name": "Kräutermischung, tiefgekühlt",
+      "category": "tiefkuehl",
+      "packageSize": 50,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 50,
+      "unitToBase": {
+        "EL": 3
+      }
+    },
+    {
+      "ingredientId": "vollkornnudeln",
+      "name": "Vollkornnudeln",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "naturreis",
+      "name": "Naturreis",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "linsen-rot",
+      "name": "Rote Linsen",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "kichererbsen-dose",
+      "name": "Kichererbsen, Dose (240 g abgetropft)",
+      "category": "vorrat",
+      "packageSize": 1,
+      "packageUnit": "Dose",
+      "estimatedPriceEur": 0.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 240,
+      "unitToBase": {
+        "Dose": 240
+      }
+    },
+    {
+      "ingredientId": "thunfisch-dose",
+      "name": "Thunfisch im eigenen Saft, Dose (115 g abgetropft)",
+      "category": "vorrat",
+      "packageSize": 1,
+      "packageUnit": "Dose",
+      "estimatedPriceEur": 1.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 115,
+      "unitToBase": {
+        "Dose": 115
+      }
+    },
+    {
+      "ingredientId": "tomaten-passiert",
+      "name": "Passierte Tomaten",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "mandeln",
+      "name": "Mandeln, ganz",
+      "category": "vorrat",
+      "packageSize": 200,
+      "packageUnit": "g",
+      "estimatedPriceEur": 2.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 200,
+      "unitToBase": {}
+    },
+    {
+      "ingredientId": "honig",
+      "name": "Honig",
+      "category": "vorrat",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 4.99,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "TL": 7
+      }
+    },
+    {
+      "ingredientId": "rapsoel",
+      "name": "Rapsöl",
+      "category": "vorrat",
+      "packageSize": 1000,
+      "packageUnit": "ml",
+      "estimatedPriceEur": 2.49,
+      "isEstimate": true,
+      "baseUnit": "ml",
+      "packageBaseAmount": 1000,
+      "unitToBase": {
+        "EL": 10,
+        "TL": 4
+      }
+    },
+    {
+      "ingredientId": "senf",
+      "name": "Senf, mittelscharf",
+      "category": "vorrat",
+      "packageSize": 200,
+      "packageUnit": "ml",
+      "estimatedPriceEur": 0.69,
+      "isEstimate": true,
+      "baseUnit": "ml",
+      "packageBaseAmount": 200,
+      "unitToBase": {
+        "TL": 5
+      }
+    },
+    {
+      "ingredientId": "gemuesebruehe",
+      "name": "Gemüsebrühe, Pulver",
+      "category": "vorrat",
+      "packageSize": 150,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.79,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 150,
+      "unitToBase": {
+        "TL": 5
+      }
+    },
+    {
+      "ingredientId": "salz",
+      "name": "Salz",
+      "category": "gewuerze",
+      "packageSize": 500,
+      "packageUnit": "g",
+      "estimatedPriceEur": 0.69,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 500,
+      "unitToBase": {
+        "Prise": 0.5
+      }
+    },
+    {
+      "ingredientId": "pfeffer",
+      "name": "Pfeffer, gemahlen",
+      "category": "gewuerze",
+      "packageSize": 50,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.49,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 50,
+      "unitToBase": {
+        "Prise": 0.5
+      }
+    },
+    {
+      "ingredientId": "zimt",
+      "name": "Zimt, gemahlen",
+      "category": "gewuerze",
+      "packageSize": 40,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 40,
+      "unitToBase": {
+        "Prise": 0.5
+      }
+    },
+    {
+      "ingredientId": "paprikapulver",
+      "name": "Paprikapulver, edelsüß",
+      "category": "gewuerze",
+      "packageSize": 50,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.19,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 50,
+      "unitToBase": {
+        "TL": 2
+      }
+    },
+    {
+      "ingredientId": "currypulver",
+      "name": "Currypulver",
+      "category": "gewuerze",
+      "packageSize": 50,
+      "packageUnit": "g",
+      "estimatedPriceEur": 1.29,
+      "isEstimate": true,
+      "baseUnit": "g",
+      "packageBaseAmount": 50,
+      "unitToBase": {
+        "TL": 2
+      }
+    }
+  ]
+}

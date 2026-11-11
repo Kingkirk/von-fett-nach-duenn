@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "language": "de",
+  "safety": {
+    "title": "Bitte zuerst lesen",
+    "short": "Vor dem Start mit Ärztin oder Arzt sprechen. Bei Schmerzen, Schwindel, Atemnot oder Unwohlsein sofort aufhören.",
+    "points": [
+      "Sprich vor dem Start mit deiner Ärztin oder deinem Arzt. Besonders wichtig bei Herz-, Kreislauf- oder Gelenkbeschwerden, nach Stürzen oder Operationen.",
+      "Hör sofort auf bei Schmerzen, Schwindel, Atemnot, Herzrasen oder wenn dir unwohl wird. Setz dich hin und ruh dich aus.",
+      "Bei Schmerzen in der Brust oder Atemnot, die nicht schnell vergeht: Ruf den Notruf 112.",
+      "Halte immer einen stabilen Stuhl oder eine feste Ablage in Reichweite. Keine Stühle mit Rollen.",
+      "Trag feste Schuhe und sorg für freien Platz ohne Teppichkanten oder Kabel.",
+      "Beweg dich langsam und ruhig. Atme dabei weiter, nicht die Luft anhalten.",
+      "Trink etwas Wasser und mach Pausen, wann immer du sie brauchst."
+    ],
+    "disclaimer": "Diese Übungen sind allgemeine Anregungen und kein medizinischer Rat. Sie ersetzen keine ärztliche oder physiotherapeutische Beratung.",
+    "confirmLabel": "Gelesen, weiter"
+  },
+  "types": [
+    {
+      "id": "sitzen",
+      "label": "Im Sitzen"
+    },
+    {
+      "id": "stehen",
+      "label": "Im Stehen mit Halt"
+    },
+    {
+      "id": "gleichgewicht",
+      "label": "Gleichgewicht"
+    },
+    {
+      "id": "gehen",
+      "label": "Gehen"
+    },
+    {
+      "id": "dehnen",
+      "label": "Lockern und Dehnen"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "marschieren-im-sitzen",
+      "name": "Marschieren im Sitzen",
+      "type": "sitzen",
+      "equipment": "Stuhl ohne Rollen",
+      "dose": {
+        "einstieg": {
+          "durationSeconds": 60,
+          "perSide": false,
+          "label": "1 Minute"
+        },
+        "aufbau": {
+          "durationSeconds": 120,
+          "perSide": false,
+          "label": "2 Minuten"
+        },
+        "fortgeschritten": {
+          "durationSeconds": 180,
+          "perSide": false,
+          "label": "3 Minuten"
+        }
+      },
+      "steps": [
+        "Setz dich aufrecht auf die vordere Hälfte des Stuhls. Die Füße stehen flach auf dem Boden.",
+        "Heb abwechselnd das rechte und das linke Knie etwas an, wie beim Gehen.",
+        "Schwing die Arme locker mit. Atme ruhig weiter."
+      ],
+      "image": "uebung-marschieren-im-sitzen.webp"
+    },
+    {
+      "id": "schultern-kreisen",
+      "name": "Schultern kreisen",
+      "type": "sitzen",
+      "equipment": "Stuhl ohne Rollen",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": false,
+          "sets": 1,
+          "label": "5-mal"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": false,
+          "sets": 1,
+          "label": "8-mal"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": false,
+          "sets": 1,
+          "label": "10-mal"
+        }
+      },
+      "steps": [
+        "Setz dich aufrecht hin. Die Arme hängen locker.",
+        "Zieh die Schultern langsam nach oben, dann nach hinten und wieder nach unten.",
+        "Danach die gleiche Zahl in die andere Richtung."
+      ],
+      "image": "uebung-schultern-kreisen.webp"
+    },
+    {
+      "id": "beine-strecken-im-sitzen",
+      "name": "Bein strecken im Sitzen",
+      "type": "sitzen",
+      "equipment": "Stuhl ohne Rollen",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": true,
+          "sets": 1,
+          "label": "5-mal je Seite"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": true,
+          "sets": 1,
+          "label": "8-mal je Seite"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": true,
+          "sets": 2,
+          "label": "2 Runden: 10-mal je Seite"
+        }
+      },
+      "steps": [
+        "Setz dich aufrecht hin und halte dich seitlich am Sitz fest.",
+        "Streck ein Bein langsam nach vorn, bis es fast gerade ist. Kurz halten.",
+        "Stell den Fuß langsam wieder ab. Dann das andere Bein."
+      ],
+      "image": "uebung-beine-strecken-im-sitzen.webp"
+    },
+    {
+      "id": "fersen-und-zehen-heben",
+      "name": "Fersen und Zehen heben",
+      "type": "sitzen",
+      "equipment": "Stuhl ohne Rollen",
+      "dose": {
+        "einstieg": {
+          "repetitions": 8,
+          "perSide": false,
+          "sets": 1,
+          "label": "8-mal"
+        },
+        "aufbau": {
+          "repetitions": 12,
+          "perSide": false,
+          "sets": 1,
+          "label": "12-mal"
+        },
+        "fortgeschritten": {
+          "repetitions": 15,
+          "perSide": false,
+          "sets": 1,
+          "label": "15-mal"
+        }
+      },
+      "steps": [
+        "Setz dich aufrecht hin. Die Füße stehen flach nebeneinander.",
+        "Heb beide Fersen an. Die Zehen bleiben am Boden.",
+        "Stell die Fersen ab und heb nun die Zehen an. Das ist einmal."
+      ],
+      "image": "uebung-fersen-und-zehen-heben.webp"
+    },
+    {
+      "id": "aufstehen-vom-stuhl",
+      "name": "Aufstehen vom Stuhl",
+      "type": "stehen",
+      "equipment": "Stabiler Stuhl, mit Rückseite an der Wand",
+      "dose": {
+        "einstieg": {
+          "repetitions": 3,
+          "perSide": false,
+          "sets": 1,
+          "label": "3-mal"
+        },
+        "aufbau": {
+          "repetitions": 6,
+          "perSide": false,
+          "sets": 1,
+          "label": "6-mal"
+        },
+        "fortgeschritten": {
+          "repetitions": 8,
+          "perSide": false,
+          "sets": 2,
+          "label": "2 Runden: 8-mal"
+        }
+      },
+      "steps": [
+        "Setz dich auf die vordere Hälfte des Stuhls. Die Füße stehen etwa hüftbreit.",
+        "Beug den Oberkörper leicht vor und steh langsam auf. Nimm die Hände zur Hilfe, wenn nötig.",
+        "Setz dich langsam und kontrolliert wieder hin."
+      ],
+      "image": "uebung-aufstehen-vom-stuhl.webp"
+    },
+    {
+      "id": "zehenstand-mit-halt",
+      "name": "Zehenstand mit Halt",
+      "type": "stehen",
+      "equipment": "Stuhllehne oder Arbeitsplatte",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": false,
+          "sets": 1,
+          "label": "5-mal"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": false,
+          "sets": 1,
+          "label": "8-mal"
+        },
+        "fortgeschritten": {
+          "repetitions": 12,
+          "perSide": false,
+          "sets": 1,
+          "label": "12-mal"
+        }
+      },
+      "steps": [
+        "Stell dich hinter einen Stuhl und halte dich mit beiden Händen an der Lehne fest.",
+        "Heb langsam beide Fersen an und komm auf die Zehenspitzen.",
+        "Senk die Fersen langsam wieder ab."
+      ],
+      "image": "uebung-zehenstand-mit-halt.webp"
+    },
+    {
+      "id": "bein-seitlich-heben",
+      "name": "Bein seitlich heben",
+      "type": "stehen",
+      "equipment": "Stuhllehne oder Arbeitsplatte",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": true,
+          "sets": 1,
+          "label": "5-mal je Seite"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": true,
+          "sets": 1,
+          "label": "8-mal je Seite"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": true,
+          "sets": 1,
+          "label": "10-mal je Seite"
+        }
+      },
+      "steps": [
+        "Stell dich aufrecht hinter einen Stuhl und halte dich an der Lehne fest.",
+        "Heb ein Bein langsam zur Seite an. Der Oberkörper bleibt gerade.",
+        "Stell das Bein langsam ab. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "image": "uebung-bein-seitlich-heben.webp"
+    },
+    {
+      "id": "ferse-zum-po",
+      "name": "Ferse zum Po",
+      "type": "stehen",
+      "equipment": "Stuhllehne oder Arbeitsplatte",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": true,
+          "sets": 1,
+          "label": "5-mal je Seite"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": true,
+          "sets": 1,
+          "label": "8-mal je Seite"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": true,
+          "sets": 1,
+          "label": "10-mal je Seite"
+        }
+      },
+      "steps": [
+        "Stell dich aufrecht hinter einen Stuhl und halte dich an der Lehne fest.",
+        "Beug ein Knie und führ die Ferse langsam nach hinten in Richtung Po.",
+        "Stell den Fuß langsam wieder ab. Dann das andere Bein."
+      ],
+      "image": "uebung-ferse-zum-po.webp"
+    },
+    {
+      "id": "liegestuetz-an-der-wand",
+      "name": "Liegestütz an der Wand",
+      "type": "stehen",
+      "equipment": "Freie Wand",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": false,
+          "sets": 1,
+          "label": "5-mal"
+        },
+        "aufbau": {
+          "repetitions": 8,
+          "perSide": false,
+          "sets": 1,
+          "label": "8-mal"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": false,
+          "sets": 2,
+          "label": "2 Runden: 10-mal"
+        }
+      },
+      "steps": [
+        "Stell dich eine Armlänge vor eine Wand. Leg die Hände in Schulterhöhe an die Wand.",
+        "Beug die Arme langsam, bis die Nase näher an der Wand ist. Der Körper bleibt gerade.",
+        "Drück dich langsam wieder zurück."
+      ],
+      "image": "uebung-liegestuetz-an-der-wand.webp"
+    },
+    {
+      "id": "auf-einem-bein-stehen",
+      "name": "Auf einem Bein stehen",
+      "type": "gleichgewicht",
+      "equipment": "Stuhllehne oder Arbeitsplatte",
+      "dose": {
+        "einstieg": {
+          "durationSeconds": 10,
+          "perSide": true,
+          "label": "10 Sekunden je Seite"
+        },
+        "aufbau": {
+          "durationSeconds": 20,
+          "perSide": true,
+          "label": "20 Sekunden je Seite"
+        },
+        "fortgeschritten": {
+          "durationSeconds": 30,
+          "perSide": true,
+          "label": "30 Sekunden je Seite"
+        }
+      },
+      "steps": [
+        "Stell dich neben einen Stuhl und halte dich mit einer Hand an der Lehne fest.",
+        "Heb einen Fuß ein wenig vom Boden ab und bleib ruhig stehen.",
+        "Stell den Fuß wieder ab und wechsle die Seite. Wenn es sicher geht, nur noch mit einem Finger halten."
+      ],
+      "image": "uebung-auf-einem-bein-stehen.webp"
+    },
+    {
+      "id": "fuesse-voreinander",
+      "name": "Füße voreinander stellen",
+      "type": "gleichgewicht",
+      "equipment": "Stuhllehne oder Arbeitsplatte",
+      "dose": {
+        "einstieg": {
+          "durationSeconds": 10,
+          "perSide": true,
+          "label": "10 Sekunden je Seite"
+        },
+        "aufbau": {
+          "durationSeconds": 20,
+          "perSide": true,
+          "label": "20 Sekunden je Seite"
+        },
+        "fortgeschritten": {
+          "durationSeconds": 30,
+          "perSide": true,
+          "label": "30 Sekunden je Seite"
+        }
+      },
+      "steps": [
+        "Stell dich neben einen Stuhl und halte dich an der Lehne fest.",
+        "Stell einen Fuß direkt vor den anderen, die Ferse berührt fast die Zehen.",
+        "Bleib ruhig stehen und schau geradeaus. Dann den anderen Fuß nach vorn."
+      ],
+      "image": "uebung-fuesse-voreinander.webp"
+    },
+    {
+      "id": "gehen-an-der-arbeitsplatte",
+      "name": "Gehen an der Arbeitsplatte entlang",
+      "type": "gleichgewicht",
+      "equipment": "Lange Arbeitsplatte oder Flur mit Handlauf",
+      "dose": {
+        "einstieg": {
+          "repetitions": 5,
+          "perSide": false,
+          "sets": 1,
+          "label": "5 Schritte"
+        },
+        "aufbau": {
+          "repetitions": 10,
+          "perSide": false,
+          "sets": 1,
+          "label": "10 Schritte"
+        },
+        "fortgeschritten": {
+          "repetitions": 10,
+          "perSide": false,
+          "sets": 2,
+          "label": "2 Runden: 10 Schritte"
+        }
+      },
+      "steps": [
+        "Stell dich seitlich an eine Arbeitsplatte und leg eine Hand darauf.",
+        "Geh langsam vorwärts. Setz dabei die Ferse direkt vor die Zehen des anderen Fußes.",
+        "Bleib mit der Hand an der Platte. Am Ende umdrehen und mit der anderen Hand zurück."
+      ],
+      "image": "uebung-gehen-an-der-arbeitsplatte.webp"
+    },
+    {
+      "id": "spaziergang",
+      "name": "Spaziergang",
+      "type": "gehen",
+      "equipment": "Feste Schuhe, nach Wunsch ein Gehstock",
+      "dose": {
+        "einstieg": {
+          "durationSeconds": 600,
+          "perSide": false,
+          "label": "10 Minuten"
+        },
+        "aufbau": {
+          "durationSeconds": 1200,
+          "perSide": false,
+          "label": "20 Minuten"
+        },
+        "fortgeschritten": {
+          "durationSeconds": 1800,
+          "perSide": false,
+          "label": "30 Minuten"
+        }
+      },
+      "steps": [
+        "Zieh feste Schuhe an. Wähle einen ebenen, bekannten Weg.",
+        "Geh in einem ruhigen Tempo, bei dem du dich noch gut unterhalten kannst.",
+        "Mach eine Pause, wann immer du sie brauchst."
+      ],
+      "image": "uebung-spaziergang.webp"
+    },
+    {
+      "id": "waden-dehnen",
+      "name": "Waden dehnen",
+      "type": "dehnen",
+      "equipment": "Stuhllehne oder Wand",
+      "dose": {
+        "einstieg": {
+          "durationSeconds": 15,
+          "perSide": true,
+          "label": "15 Sekunden je Seite"
+        },
+        "aufbau": {
+          "durationSeconds": 20,
+          "perSide": true,
+          "label": "20 Sekunden je Seite"
+        },
+        "fortgeschritten": {
+          "durationSeconds": 30,
+          "perSide": true,
+          "label": "30 Sekunden je Seite"
+        }
+      },
+      "steps": [
+        "Stell dich vor einen Stuhl und halte dich an der Lehne fest.",
+        "Stell ein Bein einen Schritt nach hinten. Die Ferse bleibt am Boden.",
+        "Beug das vordere Knie leicht, bis du hinten in der Wade ein leichtes Ziehen spürst. Halten, dann Seite wechseln."
+      ],
+      "image": "uebung-waden-dehnen.webp"
+    }
+  ],
+  "levels": [
+    {
+      "id": "einstieg",
+      "label": "Einstieg",
+      "description": "Ruhiger Anfang, vor allem im Sitzen. Etwa 10 Minuten je Übungstag.",
+      "approxMinutesPerSession": 10,
+      "switchHint": "Wechsle erst zur nächsten Stufe, wenn sich diese Stufe über einige Wochen leicht anfühlt. Du kannst jederzeit zurückgehen.",
+      "days": [
+        {
+          "day": "mo",
+          "label": "Montag",
+          "kind": "training",
+          "title": "Übungen im Sitzen",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "schultern-kreisen",
+            "beine-strecken-im-sitzen",
+            "fersen-und-zehen-heben",
+            "auf-einem-bein-stehen",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "di",
+          "label": "Dienstag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        },
+        {
+          "day": "mi",
+          "label": "Mittwoch",
+          "kind": "training",
+          "title": "Übungen im Sitzen",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "schultern-kreisen",
+            "beine-strecken-im-sitzen",
+            "fersen-und-zehen-heben",
+            "auf-einem-bein-stehen",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "do",
+          "label": "Donnerstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "fr",
+          "label": "Freitag",
+          "kind": "training",
+          "title": "Übungen im Sitzen",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "schultern-kreisen",
+            "beine-strecken-im-sitzen",
+            "fersen-und-zehen-heben",
+            "auf-einem-bein-stehen",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "sa",
+          "label": "Samstag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        },
+        {
+          "day": "so",
+          "label": "Sonntag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        }
+      ]
+    },
+    {
+      "id": "aufbau",
+      "label": "Aufbau",
+      "description": "Mehr Übungen im Stehen, immer mit Halt. Etwa 15 Minuten je Übungstag.",
+      "approxMinutesPerSession": 15,
+      "switchHint": "Wechsle erst zur nächsten Stufe, wenn sich diese Stufe über einige Wochen leicht anfühlt. Du kannst jederzeit zurückgehen.",
+      "days": [
+        {
+          "day": "mo",
+          "label": "Montag",
+          "kind": "training",
+          "title": "Kraft mit Halt",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "aufstehen-vom-stuhl",
+            "zehenstand-mit-halt",
+            "liegestuetz-an-der-wand",
+            "fuesse-voreinander",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "di",
+          "label": "Dienstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "mi",
+          "label": "Mittwoch",
+          "kind": "training",
+          "title": "Übungen im Sitzen",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "schultern-kreisen",
+            "beine-strecken-im-sitzen",
+            "fersen-und-zehen-heben",
+            "auf-einem-bein-stehen",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "do",
+          "label": "Donnerstag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        },
+        {
+          "day": "fr",
+          "label": "Freitag",
+          "kind": "training",
+          "title": "Kraft mit Halt",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "aufstehen-vom-stuhl",
+            "zehenstand-mit-halt",
+            "liegestuetz-an-der-wand",
+            "fuesse-voreinander",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "sa",
+          "label": "Samstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "so",
+          "label": "Sonntag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        }
+      ]
+    },
+    {
+      "id": "fortgeschritten",
+      "label": "Fortgeschritten",
+      "description": "Kraft und Gleichgewicht an mehr Tagen. Etwa 20 Minuten je Übungstag.",
+      "approxMinutesPerSession": 20,
+      "switchHint": "Bleib so lange auf dieser Stufe, wie es dir guttut. Du kannst jederzeit zurückgehen.",
+      "days": [
+        {
+          "day": "mo",
+          "label": "Montag",
+          "kind": "training",
+          "title": "Kraft und Gleichgewicht",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "aufstehen-vom-stuhl",
+            "bein-seitlich-heben",
+            "ferse-zum-po",
+            "liegestuetz-an-der-wand",
+            "auf-einem-bein-stehen",
+            "gehen-an-der-arbeitsplatte",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "di",
+          "label": "Dienstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "mi",
+          "label": "Mittwoch",
+          "kind": "training",
+          "title": "Kraft mit Halt",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "aufstehen-vom-stuhl",
+            "zehenstand-mit-halt",
+            "liegestuetz-an-der-wand",
+            "fuesse-voreinander",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "do",
+          "label": "Donnerstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "fr",
+          "label": "Freitag",
+          "kind": "training",
+          "title": "Kraft und Gleichgewicht",
+          "exerciseIds": [
+            "marschieren-im-sitzen",
+            "aufstehen-vom-stuhl",
+            "bein-seitlich-heben",
+            "ferse-zum-po",
+            "liegestuetz-an-der-wand",
+            "auf-einem-bein-stehen",
+            "gehen-an-der-arbeitsplatte",
+            "waden-dehnen"
+          ]
+        },
+        {
+          "day": "sa",
+          "label": "Samstag",
+          "kind": "gehen",
+          "title": "Spaziergang",
+          "exerciseIds": [
+            "spaziergang"
+          ]
+        },
+        {
+          "day": "so",
+          "label": "Sonntag",
+          "kind": "pause",
+          "title": "Ruhetag",
+          "exerciseIds": [],
+          "note": "Heute ist Pause. Erholung gehört dazu."
+        }
+      ]
+    }
+  ]
+}

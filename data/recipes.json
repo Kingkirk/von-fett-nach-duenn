@@ -1,0 +1,1450 @@
+{
+  "version": 1,
+  "language": "de",
+  "kcalNote": "Kalorien je Portion sind geschätzt, berechnet aus üblichen Nährwerten und auf 10 kcal gerundet. Je nach Produkt kann der Wert abweichen.",
+  "categories": [
+    {
+      "id": "fruehstueck",
+      "label": "Frühstück",
+      "mealSlot": "fruehstueck"
+    },
+    {
+      "id": "mittag",
+      "label": "Mittag",
+      "mealSlot": "mittag"
+    },
+    {
+      "id": "abendbrot",
+      "label": "Abendbrot",
+      "mealSlot": "abend"
+    },
+    {
+      "id": "suppen",
+      "label": "Suppen",
+      "mealSlot": "mittag"
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks",
+      "mealSlot": "snacks"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "haferbrei-mit-apfel",
+      "title": "Haferbrei mit Apfel und Zimt",
+      "category": "fruehstueck",
+      "servings": 2,
+      "timeMinutes": 10,
+      "difficulty": "einfach",
+      "kcalPerServing": 280,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "haferflocken",
+          "name": "Haferflocken, zart",
+          "amount": 80,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 400,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "apfel",
+          "name": "Äpfel",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zimt",
+          "name": "Zimt, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Milch und Haferflocken in einen Topf geben.",
+        "Unter Rühren aufkochen.",
+        "Bei kleiner Hitze 3 Minuten quellen lassen.",
+        "Apfel waschen und klein schneiden.",
+        "Apfel unterrühren. Mit Zimt bestreuen."
+      ],
+      "image": "rezept-haferbrei-mit-apfel.webp"
+    },
+    {
+      "id": "quark-mit-beeren",
+      "title": "Quark mit Beeren",
+      "category": "fruehstueck",
+      "servings": 2,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 150,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "magerquark",
+          "name": "Magerquark",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "beeren-tk",
+          "name": "Beerenmischung, tiefgekühlt",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "honig",
+          "name": "Honig",
+          "amount": 1,
+          "unit": "TL"
+        }
+      ],
+      "steps": [
+        "Beeren am Vorabend im Kühlschrank auftauen lassen.",
+        "Quark und Milch glatt rühren.",
+        "Quark auf zwei Schalen verteilen.",
+        "Beeren darauf geben. Mit Honig beträufeln."
+      ],
+      "image": "rezept-quark-mit-beeren.webp"
+    },
+    {
+      "id": "ruehrei-mit-tomate",
+      "title": "Rührei mit Tomate und Brot",
+      "category": "fruehstueck",
+      "servings": 1,
+      "timeMinutes": 10,
+      "difficulty": "einfach",
+      "kcalPerServing": 320,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "eier",
+          "name": "Eier",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "tomate",
+          "name": "Tomaten",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "petersilie",
+          "name": "Petersilie, glatt",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "vollkornbrot",
+          "name": "Vollkornbrot, geschnitten",
+          "amount": 1,
+          "unit": "Scheibe"
+        }
+      ],
+      "steps": [
+        "Tomate waschen und klein schneiden.",
+        "Eier in einer Schüssel verquirlen. Salzen und pfeffern.",
+        "Öl in einer Pfanne erhitzen.",
+        "Eier hineingeben und langsam stocken lassen. Dabei umrühren.",
+        "Tomate und Petersilie darüber geben.",
+        "Mit dem Brot servieren."
+      ],
+      "image": "rezept-ruehrei-mit-tomate.webp"
+    },
+    {
+      "id": "brot-frischkaese-gurke",
+      "title": "Vollkornbrot mit Frischkäse und Gurke",
+      "category": "fruehstueck",
+      "servings": 1,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 270,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "vollkornbrot",
+          "name": "Vollkornbrot, geschnitten",
+          "amount": 2,
+          "unit": "Scheibe"
+        },
+        {
+          "ingredientId": "frischkaese-leicht",
+          "name": "Frischkäse, leicht",
+          "amount": 30,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "gurke",
+          "name": "Salatgurke",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Gurke waschen und in Scheiben schneiden.",
+        "Brot mit Frischkäse bestreichen.",
+        "Gurke darauf legen. Etwas pfeffern."
+      ],
+      "image": "rezept-brot-frischkaese-gurke.webp"
+    },
+    {
+      "id": "joghurt-banane-hafer",
+      "title": "Joghurt mit Banane und Haferflocken",
+      "category": "fruehstueck",
+      "servings": 1,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 200,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "naturjoghurt",
+          "name": "Naturjoghurt, 1,5 % Fett",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "banane",
+          "name": "Bananen",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "haferflocken",
+          "name": "Haferflocken, zart",
+          "amount": 20,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "zimt",
+          "name": "Zimt, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Joghurt in eine Schale geben.",
+        "Banane schälen und in Scheiben schneiden.",
+        "Banane und Haferflocken auf den Joghurt geben.",
+        "Mit Zimt bestreuen."
+      ],
+      "image": "rezept-joghurt-banane-hafer.webp"
+    },
+    {
+      "id": "haehnchen-reis-brokkoli",
+      "title": "Hähnchen mit Reis und Brokkoli",
+      "category": "mittag",
+      "servings": 2,
+      "timeMinutes": 35,
+      "difficulty": "einfach",
+      "kcalPerServing": 460,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "naturreis",
+          "name": "Naturreis",
+          "amount": 120,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "haehnchenbrust",
+          "name": "Hähnchenbrustfilet",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "brokkoli",
+          "name": "Brokkoli",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "paprikapulver",
+          "name": "Paprikapulver, edelsüß",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Reis nach Packung in Salzwasser garen.",
+        "Brokkoli in kleine Röschen teilen.",
+        "Brokkoli 6 bis 8 Minuten in wenig Wasser garen.",
+        "Hähnchen in Streifen schneiden. Mit Salz, Pfeffer und Paprika würzen.",
+        "Öl erhitzen. Hähnchen darin rundum braten, bis es innen ganz durch ist.",
+        "Alles zusammen anrichten."
+      ],
+      "image": "rezept-haehnchen-reis-brokkoli.webp"
+    },
+    {
+      "id": "nudeln-tomatensauce-zucchini",
+      "title": "Vollkornnudeln mit Tomatensoße und Zucchini",
+      "category": "mittag",
+      "servings": 2,
+      "timeMinutes": 25,
+      "difficulty": "einfach",
+      "kcalPerServing": 420,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "vollkornnudeln",
+          "name": "Vollkornnudeln",
+          "amount": 160,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "tomaten-passiert",
+          "name": "Passierte Tomaten",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "zucchini",
+          "name": "Zucchini",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "knoblauch",
+          "name": "Knoblauch",
+          "amount": 1,
+          "unit": "Zehe"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Nudeln nach Packung in Salzwasser kochen.",
+        "Zwiebel und Knoblauch fein schneiden. Zucchini würfeln.",
+        "Öl erhitzen. Zwiebel, Knoblauch und Zucchini 5 Minuten braten.",
+        "Passierte Tomaten dazugeben. 10 Minuten leise köcheln lassen.",
+        "Mit Salz und Pfeffer abschmecken.",
+        "Nudeln abgießen und mit der Soße mischen."
+      ],
+      "image": "rezept-nudeln-tomatensauce-zucchini.webp"
+    },
+    {
+      "id": "ofenkartoffeln-kraeuterquark",
+      "title": "Ofenkartoffeln mit Kräuterquark",
+      "category": "mittag",
+      "servings": 2,
+      "timeMinutes": 45,
+      "difficulty": "einfach",
+      "kcalPerServing": 360,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 600,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "magerquark",
+          "name": "Magerquark",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "kraeuter-tk",
+          "name": "Kräutermischung, tiefgekühlt",
+          "amount": 2,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Ofen auf 200 °C (Umluft 180 °C) vorheizen.",
+        "Kartoffeln waschen und halbieren.",
+        "Kartoffeln mit Öl und Salz mischen. Auf ein Blech mit Backpapier legen.",
+        "Etwa 35 Minuten backen, bis sie weich sind.",
+        "Quark, Milch und Kräuter verrühren. Salzen und pfeffern.",
+        "Kartoffeln mit dem Quark servieren."
+      ],
+      "image": "rezept-ofenkartoffeln-kraeuterquark.webp"
+    },
+    {
+      "id": "seelachs-gemuese-kartoffeln",
+      "title": "Seelachs mit Möhren, Erbsen und Kartoffeln",
+      "category": "mittag",
+      "servings": 2,
+      "timeMinutes": 30,
+      "difficulty": "einfach",
+      "kcalPerServing": 380,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 400,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "seelachs-tk",
+          "name": "Seelachsfilet, tiefgekühlt",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "moehren",
+          "name": "Möhren",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "erbsen-tk",
+          "name": "Erbsen, tiefgekühlt",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "zitrone",
+          "name": "Zitronen",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Fisch nach Packung auftauen lassen.",
+        "Kartoffeln schälen und in Salzwasser 20 Minuten kochen.",
+        "Möhren schälen und in Scheiben schneiden. Mit den Erbsen 8 Minuten in wenig Wasser garen.",
+        "Fisch salzen und pfeffern.",
+        "Öl erhitzen. Fisch je Seite 3 bis 4 Minuten braten.",
+        "Mit Zitronensaft beträufeln und anrichten."
+      ],
+      "image": "rezept-seelachs-gemuese-kartoffeln.webp"
+    },
+    {
+      "id": "kartoffeln-spinat-ei",
+      "title": "Kartoffeln mit Spinat und Ei",
+      "category": "mittag",
+      "servings": 2,
+      "timeMinutes": 30,
+      "difficulty": "einfach",
+      "kcalPerServing": 360,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "spinat-tk",
+          "name": "Blattspinat, tiefgekühlt",
+          "amount": 450,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "eier",
+          "name": "Eier",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 50,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Kartoffeln schälen und in Salzwasser 20 Minuten kochen.",
+        "Eier 9 Minuten hart kochen. Kalt abschrecken.",
+        "Zwiebel fein schneiden. In Öl glasig dünsten.",
+        "Spinat und Milch dazugeben. Unter Rühren 10 Minuten erhitzen.",
+        "Spinat salzen und pfeffern.",
+        "Eier schälen, halbieren und mit Kartoffeln und Spinat anrichten."
+      ],
+      "image": "rezept-kartoffeln-spinat-ei.webp"
+    },
+    {
+      "id": "tomate-mozzarella-brot",
+      "title": "Tomate mit Mozzarella und Brot",
+      "category": "abendbrot",
+      "servings": 1,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 280,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "tomate",
+          "name": "Tomaten",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "mozzarella-leicht",
+          "name": "Mozzarella, leicht",
+          "amount": 60,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "vollkornbrot",
+          "name": "Vollkornbrot, geschnitten",
+          "amount": 1,
+          "unit": "Scheibe"
+        }
+      ],
+      "steps": [
+        "Tomaten waschen und in Scheiben schneiden.",
+        "Mozzarella in Scheiben schneiden.",
+        "Beides abwechselnd auf einen Teller legen.",
+        "Mit Öl beträufeln. Salzen und pfeffern.",
+        "Mit dem Brot servieren."
+      ],
+      "image": "rezept-tomate-mozzarella-brot.webp"
+    },
+    {
+      "id": "bunter-salat-feta",
+      "title": "Bunter Salat mit Feta",
+      "category": "abendbrot",
+      "servings": 2,
+      "timeMinutes": 10,
+      "difficulty": "einfach",
+      "kcalPerServing": 250,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "gurke",
+          "name": "Salatgurke",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "tomate",
+          "name": "Tomaten",
+          "amount": 3,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "paprika",
+          "name": "Paprika, rot",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "feta",
+          "name": "Feta (Schafskäse)",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "zitrone",
+          "name": "Zitronen",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Gurke, Tomaten und Paprika waschen und würfeln.",
+        "Zwiebel fein schneiden.",
+        "Alles in eine Schüssel geben.",
+        "Zitronensaft, Öl, Salz und Pfeffer verrühren. Über den Salat geben.",
+        "Feta mit den Fingern darüber bröseln."
+      ],
+      "image": "rezept-bunter-salat-feta.webp"
+    },
+    {
+      "id": "knaeckebrot-huettenkaese",
+      "title": "Knäckebrot mit Hüttenkäse und Radieschen",
+      "category": "abendbrot",
+      "servings": 1,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 220,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "knaeckebrot",
+          "name": "Vollkorn-Knäckebrot",
+          "amount": 3,
+          "unit": "Scheibe"
+        },
+        {
+          "ingredientId": "huettenkaese",
+          "name": "Hüttenkäse",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "radieschen",
+          "name": "Radieschen",
+          "amount": 0.5,
+          "unit": "Bund"
+        },
+        {
+          "ingredientId": "petersilie",
+          "name": "Petersilie, glatt",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Radieschen waschen und in Scheiben schneiden.",
+        "Hüttenkäse auf das Knäckebrot streichen.",
+        "Radieschen darauf legen.",
+        "Mit Petersilie und Pfeffer bestreuen."
+      ],
+      "image": "rezept-knaeckebrot-huettenkaese.webp"
+    },
+    {
+      "id": "thunfisch-kichererbsen-salat",
+      "title": "Thunfisch-Salat mit Kichererbsen",
+      "category": "abendbrot",
+      "servings": 2,
+      "timeMinutes": 10,
+      "difficulty": "einfach",
+      "kcalPerServing": 290,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "thunfisch-dose",
+          "name": "Thunfisch im eigenen Saft, Dose (115 g abgetropft)",
+          "amount": 1,
+          "unit": "Dose"
+        },
+        {
+          "ingredientId": "kichererbsen-dose",
+          "name": "Kichererbsen, Dose (240 g abgetropft)",
+          "amount": 1,
+          "unit": "Dose"
+        },
+        {
+          "ingredientId": "tomate",
+          "name": "Tomaten",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "gurke",
+          "name": "Salatgurke",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "zitrone",
+          "name": "Zitronen",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Kichererbsen in ein Sieb geben und abspülen.",
+        "Thunfisch abtropfen lassen.",
+        "Tomaten und Gurke würfeln. Zwiebel fein schneiden.",
+        "Alles in einer Schüssel mischen.",
+        "Mit Zitronensaft, Öl, Salz und Pfeffer abschmecken."
+      ],
+      "image": "rezept-thunfisch-kichererbsen-salat.webp"
+    },
+    {
+      "id": "brot-putenbrust-senf",
+      "title": "Vollkornbrot mit Putenbrust und Gurke",
+      "category": "abendbrot",
+      "servings": 1,
+      "timeMinutes": 5,
+      "difficulty": "einfach",
+      "kcalPerServing": 290,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "vollkornbrot",
+          "name": "Vollkornbrot, geschnitten",
+          "amount": 2,
+          "unit": "Scheibe"
+        },
+        {
+          "ingredientId": "senf",
+          "name": "Senf, mittelscharf",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "putenbrust-aufschnitt",
+          "name": "Putenbrust, Aufschnitt",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "gurke",
+          "name": "Salatgurke",
+          "amount": 80,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Gurke waschen und in Scheiben schneiden.",
+        "Brot dünn mit Senf bestreichen.",
+        "Putenbrust und Gurke darauf legen."
+      ],
+      "image": "rezept-brot-putenbrust-senf.webp"
+    },
+    {
+      "id": "omelett-pilze-paprika",
+      "title": "Omelett mit Pilzen und Paprika",
+      "category": "abendbrot",
+      "servings": 1,
+      "timeMinutes": 15,
+      "difficulty": "mittel",
+      "kcalPerServing": 240,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "eier",
+          "name": "Eier",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "champignons",
+          "name": "Champignons, braun",
+          "amount": 100,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "paprika",
+          "name": "Paprika, rot",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "petersilie",
+          "name": "Petersilie, glatt",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Pilze und Paprika waschen und klein schneiden.",
+        "Öl in einer Pfanne erhitzen. Gemüse 5 Minuten braten.",
+        "Eier verquirlen. Salzen und pfeffern.",
+        "Eier über das Gemüse gießen.",
+        "Bei kleiner Hitze mit Deckel stocken lassen.",
+        "Mit Petersilie bestreuen und zusammenklappen."
+      ],
+      "image": "rezept-omelett-pilze-paprika.webp"
+    },
+    {
+      "id": "kuerbissuppe",
+      "title": "Kürbissuppe",
+      "category": "suppen",
+      "servings": 4,
+      "timeMinutes": 35,
+      "difficulty": "einfach",
+      "kcalPerServing": 140,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "kuerbis",
+          "name": "Hokkaido-Kürbis",
+          "amount": 800,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "gemuesebruehe",
+          "name": "Gemüsebrühe, Pulver",
+          "amount": 2,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Kürbis waschen, entkernen und würfeln. Die Schale kann dranbleiben.",
+        "Kartoffeln schälen und würfeln. Zwiebel fein schneiden.",
+        "Öl im Topf erhitzen. Zwiebel kurz andünsten.",
+        "Kürbis, Kartoffeln, Brühe und 800 ml Wasser dazugeben. 20 Minuten kochen.",
+        "Mit dem Pürierstab fein pürieren.",
+        "Milch einrühren. Salzen und pfeffern."
+      ],
+      "image": "rezept-kuerbissuppe.webp"
+    },
+    {
+      "id": "rote-linsen-suppe",
+      "title": "Rote-Linsen-Suppe",
+      "category": "suppen",
+      "servings": 4,
+      "timeMinutes": 30,
+      "difficulty": "einfach",
+      "kcalPerServing": 230,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "linsen-rot",
+          "name": "Rote Linsen",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "moehren",
+          "name": "Möhren",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "tomaten-passiert",
+          "name": "Passierte Tomaten",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "gemuesebruehe",
+          "name": "Gemüsebrühe, Pulver",
+          "amount": 2,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "currypulver",
+          "name": "Currypulver",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Zwiebel fein schneiden. Möhren schälen und klein würfeln.",
+        "Öl im Topf erhitzen. Zwiebel und Möhren 3 Minuten andünsten.",
+        "Curry kurz mitrühren.",
+        "Linsen abspülen. Mit Tomaten, Brühe und 1 Liter Wasser in den Topf geben.",
+        "15 Minuten leise kochen, bis die Linsen weich sind. Ab und zu umrühren.",
+        "Mit Salz abschmecken. Nach Wunsch pürieren."
+      ],
+      "image": "rezept-rote-linsen-suppe.webp"
+    },
+    {
+      "id": "kartoffel-lauch-suppe",
+      "title": "Kartoffel-Lauch-Suppe",
+      "category": "suppen",
+      "servings": 4,
+      "timeMinutes": 35,
+      "difficulty": "einfach",
+      "kcalPerServing": 180,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 600,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "lauch",
+          "name": "Lauch (Porree)",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "gemuesebruehe",
+          "name": "Gemüsebrühe, Pulver",
+          "amount": 2,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "milch",
+          "name": "Milch, 1,5 % Fett",
+          "amount": 100,
+          "unit": "ml"
+        },
+        {
+          "ingredientId": "petersilie",
+          "name": "Petersilie, glatt",
+          "amount": 2,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Kartoffeln schälen und würfeln.",
+        "Lauch längs halbieren, gut waschen und in Ringe schneiden. Zwiebel fein schneiden.",
+        "Öl im Topf erhitzen. Zwiebel und Lauch 5 Minuten andünsten.",
+        "Kartoffeln, Brühe und 1 Liter Wasser dazugeben. 20 Minuten kochen.",
+        "Etwa die Hälfte pürieren. Milch einrühren.",
+        "Salzen, pfeffern und mit Petersilie bestreuen."
+      ],
+      "image": "rezept-kartoffel-lauch-suppe.webp"
+    },
+    {
+      "id": "tomatensuppe",
+      "title": "Tomatensuppe",
+      "category": "suppen",
+      "servings": 2,
+      "timeMinutes": 20,
+      "difficulty": "einfach",
+      "kcalPerServing": 120,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "tomaten-passiert",
+          "name": "Passierte Tomaten",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "zwiebel",
+          "name": "Zwiebeln",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "knoblauch",
+          "name": "Knoblauch",
+          "amount": 1,
+          "unit": "Zehe"
+        },
+        {
+          "ingredientId": "rapsoel",
+          "name": "Rapsöl",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "gemuesebruehe",
+          "name": "Gemüsebrühe, Pulver",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "naturjoghurt",
+          "name": "Naturjoghurt, 1,5 % Fett",
+          "amount": 2,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Zwiebel und Knoblauch fein schneiden.",
+        "Öl im Topf erhitzen. Zwiebel und Knoblauch glasig dünsten.",
+        "Tomaten, Brühe und 200 ml Wasser dazugeben.",
+        "10 Minuten leise köcheln lassen.",
+        "Salzen und pfeffern.",
+        "In Teller füllen. Je einen Löffel Joghurt darauf geben."
+      ],
+      "image": "rezept-tomatensuppe.webp"
+    },
+    {
+      "id": "huehner-gemuese-suppe",
+      "title": "Hühnersuppe mit Gemüse",
+      "category": "suppen",
+      "servings": 4,
+      "timeMinutes": 40,
+      "difficulty": "einfach",
+      "kcalPerServing": 190,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "haehnchenbrust",
+          "name": "Hähnchenbrustfilet",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "moehren",
+          "name": "Möhren",
+          "amount": 3,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "lauch",
+          "name": "Lauch (Porree)",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "kartoffeln",
+          "name": "Kartoffeln, festkochend",
+          "amount": 300,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "gemuesebruehe",
+          "name": "Gemüsebrühe, Pulver",
+          "amount": 3,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "petersilie",
+          "name": "Petersilie, glatt",
+          "amount": 2,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Möhren und Kartoffeln schälen und würfeln. Lauch waschen und in Ringe schneiden.",
+        "1,5 Liter Wasser mit der Brühe aufkochen.",
+        "Hähnchen hineinlegen. 15 Minuten leise kochen.",
+        "Hähnchen herausnehmen. Gemüse in den Topf geben und 15 Minuten kochen.",
+        "Hähnchen klein schneiden und zurück in die Suppe geben.",
+        "Salzen, pfeffern und mit Petersilie bestreuen."
+      ],
+      "image": "rezept-huehner-gemuese-suppe.webp"
+    },
+    {
+      "id": "apfel-mit-mandeln",
+      "title": "Apfel mit Mandeln",
+      "category": "snacks",
+      "servings": 1,
+      "timeMinutes": 3,
+      "difficulty": "einfach",
+      "kcalPerServing": 140,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "apfel",
+          "name": "Äpfel",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "mandeln",
+          "name": "Mandeln, ganz",
+          "amount": 10,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Apfel waschen und in Spalten schneiden.",
+        "Mit den Mandeln auf einen Teller legen."
+      ],
+      "image": "rezept-apfel-mit-mandeln.webp"
+    },
+    {
+      "id": "gemuesesticks-quarkdip",
+      "title": "Gemüsesticks mit Quark-Dip",
+      "category": "snacks",
+      "servings": 2,
+      "timeMinutes": 10,
+      "difficulty": "einfach",
+      "kcalPerServing": 130,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "moehren",
+          "name": "Möhren",
+          "amount": 2,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "paprika",
+          "name": "Paprika, rot",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "gurke",
+          "name": "Salatgurke",
+          "amount": 0.5,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "magerquark",
+          "name": "Magerquark",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "naturjoghurt",
+          "name": "Naturjoghurt, 1,5 % Fett",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "kraeuter-tk",
+          "name": "Kräutermischung, tiefgekühlt",
+          "amount": 2,
+          "unit": "EL"
+        },
+        {
+          "ingredientId": "salz",
+          "name": "Salz",
+          "amount": 1,
+          "unit": "Prise"
+        },
+        {
+          "ingredientId": "pfeffer",
+          "name": "Pfeffer, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Möhren schälen. Paprika und Gurke waschen.",
+        "Gemüse in fingerlange Stifte schneiden.",
+        "Quark, Joghurt und Kräuter verrühren. Salzen und pfeffern.",
+        "Gemüse mit dem Dip servieren."
+      ],
+      "image": "rezept-gemuesesticks-quarkdip.webp"
+    },
+    {
+      "id": "ofenapfel-zimt",
+      "title": "Ofenapfel mit Zimt",
+      "category": "snacks",
+      "servings": 1,
+      "timeMinutes": 30,
+      "difficulty": "einfach",
+      "kcalPerServing": 140,
+      "kcalIsEstimate": true,
+      "ingredients": [
+        {
+          "ingredientId": "apfel",
+          "name": "Äpfel",
+          "amount": 1,
+          "unit": "Stück"
+        },
+        {
+          "ingredientId": "haferflocken",
+          "name": "Haferflocken, zart",
+          "amount": 10,
+          "unit": "g"
+        },
+        {
+          "ingredientId": "honig",
+          "name": "Honig",
+          "amount": 1,
+          "unit": "TL"
+        },
+        {
+          "ingredientId": "zimt",
+          "name": "Zimt, gemahlen",
+          "amount": 1,
+          "unit": "Prise"
+        }
+      ],
+      "steps": [
+        "Ofen auf 180 °C (Umluft 160 °C) vorheizen.",
+        "Apfel waschen. Das Kerngehäuse mit einem Löffel oder Apfelausstecher entfernen.",
+        "Haferflocken, Honig und Zimt mischen. In den Apfel füllen.",
+        "Apfel in eine kleine Form stellen. 20 bis 25 Minuten backen."
+      ],
+      "image": "rezept-ofenapfel-zimt.webp"
+    }
+  ]
+}
