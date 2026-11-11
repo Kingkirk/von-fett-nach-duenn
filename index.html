@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#F2F2F7">
+<meta name="theme-color" content="#F3EEE6">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="von fett nach dünn">
@@ -19,7 +19,7 @@
 (function () {
   var key = "von-fett-nach-duenn.v1";
   var theme = "system";
-  var senior = false;
+  var look = "gross";
   try {
     var raw = localStorage.getItem(key);
     if (raw) {
@@ -27,7 +27,8 @@
       var s = data && data.settings;
       if (s) {
         if (s.theme === "light" || s.theme === "dark" || s.theme === "system") theme = s.theme;
-        senior = s.senior === true;
+        if (s.look === "lila" || s.look === "gross") look = s.look;
+        else if (s.senior === false || (typeof s.senior !== "boolean" && data.version === 1)) look = "lila";
       }
     }
   } catch (e) {}
@@ -35,9 +36,15 @@
   var root = document.documentElement;
   root.setAttribute("data-theme", dark ? "dark" : "light");
   root.setAttribute("data-theme-pref", theme);
-  if (senior) root.setAttribute("data-mode", "senior");
-  else root.removeAttribute("data-mode");
+  root.removeAttribute("data-mode");
+  if (look === "lila") root.setAttribute("data-look", "lila");
+  else root.removeAttribute("data-look");
   root.style.colorScheme = dark ? "dark" : "light";
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeMeta) {
+    var color = getComputedStyle(root).getPropertyValue("--bg").trim();
+    if (color) themeMeta.setAttribute("content", color);
+  }
 })();
 </script>
 </head>
@@ -61,14 +68,16 @@
 <div id="live" class="sr-only" aria-live="polite"></div>
 <dialog id="reset-dialog" aria-labelledby="reset-title">
   <h2 id="reset-title">Alle lokalen Einträge löschen?</h2>
-  <p>Mahlzeiten, Gewicht, Wasser, Bewegung, Ziele und gemerkte Lebensmittel auf diesem Gerät werden entfernt. Darstellung und größere Ansicht bleiben. Das lässt sich nicht rückgängig machen.</p>
+  <p>Mahlzeiten, Gewicht, Wasser, Bewegung, Ziele und gemerkte Lebensmittel auf diesem Gerät werden entfernt. Darstellung und Große Tasten bleiben. Das lässt sich nicht rückgängig machen.</p>
   <div class="dialog-actions">
     <button type="button" class="btn secondary" id="reset-cancel" data-testid="reset-cancel">Abbrechen</button>
     <button type="button" class="btn danger" id="reset-confirm" data-testid="reset-confirm">Endgültig löschen</button>
   </div>
 </dialog>
 <noscript><p>Diese Seite braucht JavaScript im Browser. Es wird nichts an einen eigenen Server gesendet.</p></noscript>
+<script src="vendor/zxing-browser.min.js"></script>
 <script src="logic.js"></script>
+<script src="shop.js"></script>
 <script src="off.js"></script>
 <script src="app.js"></script>
 </body>

@@ -1,33 +1,23 @@
 # von fett nach dünn
 
-Private, statische Vorbereitung der Version 1. Nicht veröffentlicht, nicht deployt, kein Konto, kein eigenes Backend.
+Statische Fassung 2. Nicht veröffentlicht und nicht deployt.
 
-Die Einträge liegen nur im `localStorage` dieses Browsers. Einzige bewusste Ausnahme: eine Lebensmittelsuche oder ein Strichcode, den du selbst absendest, geht an Open Food Facts. Dabei werden der Suchbegriff oder der Strichcode und die technisch nötigen Verbindungsdaten (zum Beispiel die IP-Adresse) übermittelt. Tagebuch, Gewicht, Ziele und Name gehen dabei nicht mit.
+Einträge bleiben im `localStorage` unter dem Schlüssel `von-fett-nach-duenn.v1`. Eine gespeicherte Fassung 1 wird beim Öffnen nach Fassung 2 übernommen. `settings.theme` und `settings.senior` bleiben dabei unverändert. Ohne gespeicherten Stand startet die App mit Großen Tasten und System.
 
-## iPhone und Offline
+Große Tasten ist die warme, große Darstellung und der Standard in `tokens.css`. Sie lässt sich mit System, Hell oder Dunkel kombinieren. Ohne Große Tasten setzt die App `data-look="lila"`. Ein gespeicherter Stand mit `senior=false` wird dabei Lila, `senior=true` oder ein leerer Speicher bleibt bei Großen Tasten.
 
-„Zum Home-Bildschirm“ und ein zuverlässiger Offline-Start brauchen eine **per HTTPS erreichbare Adresse** oder `localhost` **auf demselben Gerät**. Ein ZIP oder das Öffnen per `file://` installiert die App nicht und registriert keinen Service Worker. Diese Fassung wird hier nicht gehostet. Hosting klärt du separat.
+Unten bleiben vier Bereiche: Heute, Mahlzeiten, Fortschritt, Profil. Auf Heute liegen die Kacheln Essen scannen, Rezepte, Einkaufsliste und Training. Diese Seiten führen mit „‹ Heute“ zurück.
 
-Lege den Ordner so auf den Server, wie er ist. Alle eigenen Dateien nutzen relative Pfade. `manifest.webmanifest` hat `start_url` und `scope` `./`, der Service Worker liegt daneben. Dadurch funktioniert derselbe Ordner auch unter einem Unterpfad, zum Beispiel `/von-fett-nach-duenn/`.
+Rezepte, Richtpreise, Übungen und Oberflächentexte stehen in `data/`. Die Texte kommen aus `data/ui-texts.json`. Bilder liegen unter `img/rezepte/` und `img/training/`, jeweils als große Datei und als `-400.webp`. Der Service Worker speichert sie erst beim Abruf im Cache `vfnd-img-v1`. Fehlt ein Bild, bleibt ein leerer Rahmen.
 
-Der Manifest-Dateityp sollte `application/manifest+json` sein. Manche statischen Server liefern `.webmanifest` sonst als allgemeinen Binärtyp aus.
+Der Scanner liegt lokal unter `vendor/` (Apache-2.0, ZXing). Die Kamera startet erst mit „Kamera starten“, das Bild wird nicht gespeichert und nicht gesendet. Nur eine erkannte Strichcode-Nummer geht an Open Food Facts. Ein QR-Code wird angezeigt und nicht geöffnet.
 
-## Lokal ansehen
+„Zum Home-Bildschirm“ braucht HTTPS oder localhost auf demselben Gerät. `file://` registriert keinen Service Worker. Diese Fassung hostet das nicht.
 
-Im Ordner dieser Dateien:
+Lokal ansehen, im Ordner dieser Dateien:
 
 ```bash
-python3 -m http.server 47321 --bind 127.0.0.1
+python3 -m http.server 47331 --bind 127.0.0.1
 ```
 
-Dann im Browser `http://127.0.0.1:47321/` öffnen. Das ist nur eine Vorschau auf demselben Rechner, kein Angebot im Netz. Für den Unterpfad kann der mitgelieferte Prüfserver außerhalb dieses Ordners genutzt werden; er ist kein Hosting.
-
-## Bedienung
-
-Heute zeigt Ziel, Gegessen, Übrig und einen Ring. Mahlzeiten lassen sich für Frühstück, Mittag, Abend und Snacks eintragen und löschen, auch mit Makros. Tage sind das lokale Datum, nicht UTC. Fortschritt speichert Gewicht und zeigt es als Kurve und Tabelle. Wasser zählt Gläser. Im Profil setzt du Ziele selbst. Die App schlägt keine Kalorien vor. Zurücksetzen fragt nach.
-
-Hell, Dunkel oder System gilt überall und startet auf System. Die größere Ansicht ist extra, warm-monochrom, und bleibt beim Wechsel von Hell und Dunkel erhalten.
-
-Die Namenssuche geht an `https://world.openfoodfacts.org/cgi/search.pl` mit `search_terms`, `search_simple=1`, `action=process` und `json=1`. `/api/v2/search?q=` ignoriert den Suchbegriff. `search.openfoodfacts.org` filtert zwar, sendet aber kein `Access-Control-Allow-Origin` und wird nicht aufgerufen. Der Strichcode bleibt `/api/v2/product/{code}`. Suche und Strichcode starten erst mit dem Knopf. Produktbilder erscheinen nur in der Trefferliste, nur von `openfoodfacts.org`, ohne Suchbegriff in der Bildadresse und ohne Referrer. Ein Nutri-Score erscheint nur, wenn er im Datensatz steht. Fehlt ein Nährwert, steht dort „nicht angegeben“ und nicht eine erfundene Null. Ohne Netz bleibt die manuelle Eingabe.
-
-Kein medizinischer Rat. Gewichtsabnahme im Alter bitte vorher ärztlich besprechen.
+Dann im Browser `http://127.0.0.1:47331/` öffnen. Für den Unterpfad `/von-fett-nach-duenn/` den Ordner eine Ebene höher ablegen und von dort aus starten.

@@ -82,16 +82,22 @@
     return {
       meals: { fruehstueck: [], mittag: [], abend: [], snacks: [] },
       water: 0,
-      movement: null
+      movement: null,
+      training: []
     };
+  }
+
+  function emptyShopping() {
+    return { picks: [], manual: [], checked: {}, priceOverrides: {}, hidden: {} };
   }
 
   function defaultState() {
     return {
-      version: 1,
+      version: 2,
       settings: {
         theme: "system",
-        senior: false,
+        senior: true,
+        look: "gross",
         onboarded: false,
         displayName: "",
         calorieGoal: null,
@@ -105,7 +111,10 @@
       days: {},
       weights: [],
       favorites: [],
-      recent: []
+      recent: [],
+      shopping: emptyShopping(),
+      recipeFavorites: [],
+      trainingDone: {}
     };
   }
 
@@ -202,14 +211,21 @@
     if (!raw || typeof raw !== "object" || Array.isArray(raw)) {
       return { state: base, corrupted: true, sanitized: false };
     }
-    if (raw.version != null && raw.version !== 1) {
-      return { state: base, corrupted: true, sanitized: false };
+    if (raw.version != null && raw.version !== 1 && raw.version !== 2) {
+      return { state: base, corrupted: true, sanitized: false, migrated: false };
     }
+    var migrated = raw.version !== 2;
     var s = raw.settings && typeof raw.settings === "object" ? raw.settings : {};
     if (s.theme === "light" || s.theme === "dark" || s.theme === "system") base.settings.theme = s.theme;
     else if (s.theme != null) dropped = true;
-    base.settings.senior = s.senior === true;
+    if (s.look === "lila" || s.look === "gross") base.settings.look = s.look;
+    else if (s.senior === false || (typeof s.senior !== "boolean" && raw.version === 1)) base.settings.look = "lila";
+    else base.settings.look = "gross";
+    base.settings.senior = base.settings.look !== "lila";
+    if (raw.version === 1 || (s.look !== "lila" && s.look !== "gross")) migrated = true;
     base.settings.onboarded = s.onboarded === true;
+    base.settings.trainingLevel = s.trainingLevel === "aufbau" || s.trainingLevel === "fortgeschritten" || s.trainingLevel === "einstieg" ? s.trainingLevel : "einstieg";
+    base.settings.trainingAck = s.trainingAck === true;
     base.settings.displayName = cleanText(s.displayName, 40);
     base.settings.calorieGoal = numOrNull(s.calorieGoal, 1, 20000);
     if (s.calorieGoal != null && s.calorieGoal !== "" && base.settings.calorieGoal == null) dropped = true;
@@ -245,6 +261,12 @@
       day.water = water == null ? 0 : Math.round(water);
       day.movement = sanitizeMovement(src.movement);
       if (src.movement && !day.movement) dropped = true;
+      var training = Array.isArray(src.training) ? src.training : [];
+      training.forEach(function (item) {
+        var clean = sanitizeTraining(item);
+        if (clean) day.training.push(clean);
+        else dropped = true;
+      });
       base.days[key] = day;
     });
 
@@ -276,7 +298,70 @@
     });
     base.favorites = base.favorites.slice(0, 30);
     base.recent = base.recent.slice(0, 8);
-    return { state: base, corrupted: false, sanitized: dropped };
+    base.shopping = sanitizeShopping(raw.shopping);
+    base.recipeFavorites = Array.isArray(raw.recipeFavorites) ? raw.recipeFavorites.map(function (id) { return cleanText(id, 80); }).filter(Boolean).slice(0, 80) : [];
+    if (raw.trainingDone && typeof raw.trainingDone === "object") {
+      Object.keys(raw.trainingDone).forEach(function (key) {
+        if (isDateKey(key) && raw.trainingDone[key] === true) base.trainingDone[key] = true;
+      });
+    }
+    base.version = 2;
+    return { state: base, corrupted: false, sanitized: dropped, migrated: migrated };
+  }
+
+  function sanitizeTraining(raw) {
+    if (!raw || typeof raw !== "object") return null;
+    var name = cleanText(raw.name, 80);
+    var minutes = numOrNull(raw.minutes, 1, 600);
+    if (!name || minutes == null) return null;
+    return {
+      id: cleanText(raw.id, 80) || uid(),
+      name: name,
+      minutes: Math.round(minutes),
+      note: cleanText(raw.note, 120)
+    };
+  }
+
+  function sanitizeShopping(raw) {
+    var shopping = emptyShopping();
+    if (!raw || typeof raw !== "object") return shopping;
+    var picks = Array.isArray(raw.picks) ? raw.picks : [];
+    picks.forEach(function (pick) {
+      var id = cleanText(pick && pick.recipeId, 80);
+      var portions = numOrNull(pick && pick.portions, 0.25, 40);
+      if (!id || portions == null) return;
+      shopping.picks.push({ recipeId: id, portions: round1(portions) });
+    });
+    var manual = Array.isArray(raw.manual) ? raw.manual : [];
+    manual.forEach(function (item) {
+      var name = cleanText(item && item.name, 80);
+      var amount = numOrNull(item && item.amount, 0, 100000);
+      var unit = cleanText(item && item.unit, 20);
+      if (!name || amount == null || !unit) return;
+      shopping.manual.push({
+        id: cleanText(item.id, 80) || uid(),
+        name: name,
+        amount: round1(amount),
+        unit: unit
+      });
+    });
+    if (raw.checked && typeof raw.checked === "object") {
+      Object.keys(raw.checked).forEach(function (key) {
+        if (raw.checked[key] === true && key.length < 160) shopping.checked[key] = true;
+      });
+    }
+    if (raw.priceOverrides && typeof raw.priceOverrides === "object") {
+      Object.keys(raw.priceOverrides).forEach(function (key) {
+        var n = numOrNull(raw.priceOverrides[key], 0, 10000);
+        if (n != null && key.length < 160) shopping.priceOverrides[key] = Math.round(n * 100) / 100;
+      });
+    }
+    if (raw.hidden && typeof raw.hidden === "object") {
+      Object.keys(raw.hidden).forEach(function (key) {
+        if (raw.hidden[key] === true && key.length < 160) shopping.hidden[key] = true;
+      });
+    }
+    return shopping;
   }
 
   function loadState(storage) {
@@ -295,6 +380,7 @@
         state: clean.state,
         corrupted: clean.corrupted,
         sanitized: clean.sanitized,
+        migrated: !!clean.migrated,
         empty: false,
         storageError: false
       };
@@ -450,7 +536,7 @@
 
   function dayHasEntry(state, date) {
     var day = state.days[date];
-    if (day && (allMeals(state, date).length || day.water > 0 || day.movement)) return true;
+    if (day && (allMeals(state, date).length || day.water > 0 || day.movement || (day.training && day.training.length))) return true;
     return state.weights.some(function (w) { return w.date === date; });
   }
 
@@ -507,7 +593,8 @@
   function resetKeepingDisplay(state) {
     var next = defaultState();
     next.settings.theme = state.settings.theme;
-    next.settings.senior = state.settings.senior;
+    next.settings.look = state.settings.look === "lila" ? "lila" : "gross";
+    next.settings.senior = next.settings.look !== "lila";
     next.settings.onboarded = true;
     return next;
   }
@@ -569,6 +656,23 @@
     return { ok: true, value: q };
   }
 
+  function planForDate(level, date) {
+    if (!level || !Array.isArray(level.days)) return null;
+    var keys = ["so", "mo", "di", "mi", "do", "fr", "sa"];
+    var when = date instanceof Date ? date : new Date(date);
+    var key = keys[when.getDay()];
+    var found = null;
+    level.days.forEach(function (day) { if (day && day.day === key) found = day; });
+    return found;
+  }
+
+  function timerSnapshot(totalSeconds, elapsedSeconds) {
+    var total = Math.max(0, Math.round(Number(totalSeconds) || 0));
+    var elapsed = Math.max(0, Math.round(Number(elapsedSeconds) || 0));
+    var left = Math.max(0, total - elapsed);
+    return { total: total, elapsed: Math.min(elapsed, total), left: left, done: total > 0 && left === 0 };
+  }
+
   function futureKey(key, today) {
     return key > today;
   }
@@ -608,6 +712,8 @@
     earliestWeight: earliestWeight,
     rememberFood: rememberFood,
     resetKeepingDisplay: resetKeepingDisplay,
+    planForDate: planForDate,
+    timerSnapshot: timerSnapshot,
     validateName: validateName,
     validateKcal: validateKcal,
     validateMacro: validateMacro,
@@ -616,6 +722,34 @@
     validateBarcode: validateBarcode,
     validateSearch: validateSearch,
     futureKey: futureKey,
-    uid: uid
+    uid: uid,
+    emptyShopping: emptyShopping,
+    addTraining: addTraining,
+    removeTraining: removeTraining,
+    setShopping: setShopping
   };
+
+  function addTraining(state, date, entry) {
+    if (!isDateKey(date)) return { ok: false, state: state };
+    var clean = sanitizeTraining(entry);
+    if (!clean) return { ok: false, state: state };
+    var next = clone(state);
+    ensure(next, date).training.push(clean);
+    return { ok: true, state: next };
+  }
+
+  function removeTraining(state, date, id) {
+    var next = clone(state);
+    var day = next.days[date];
+    if (!day) return { ok: false, state: state };
+    var before = day.training.length;
+    day.training = day.training.filter(function (item) { return item.id !== id; });
+    return { ok: day.training.length !== before, state: next };
+  }
+
+  function setShopping(state, shopping) {
+    var next = clone(state);
+    next.shopping = sanitizeShopping(shopping);
+    return next;
+  }
 })(typeof globalThis !== "undefined" ? globalThis : this);
